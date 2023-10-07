@@ -1,6 +1,6 @@
 import pgPromise from "pg-promise";
 
-const db =pgPromise()("postgres://postgres:postgres@localhost:5432/video")
+const db =pgPromise()("postgres://postgres:passsql@localhost:5432")
 
 const setupDB=async()=>{
 await db.none(`DROP TABLE IF EXISTS planets;
